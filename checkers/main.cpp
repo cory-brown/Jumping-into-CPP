@@ -43,7 +43,7 @@ int main() {
 void printBoard(int size) {
     for (int i = 0; i < size; ++i) {
         for (int k = 0; k < size; ++k) {
-            cout << "----- ";
+            cout << "---- ";
         }
         cout << endl;
         for (int j = 0; j < size; ++j) {
@@ -52,7 +52,7 @@ void printBoard(int size) {
         cout << endl;
         if (i == size - 1) {
             for (int j = 0; j < size; ++j) {
-                cout << "----- ";
+                cout << "---- ";
             }
         }
     }
@@ -96,18 +96,27 @@ void pickChecker(int playerTurn) {
         for (int j = 0; j < 8; ++j) { // row
             if (gameBoard[i][j] == playersChar[playerTurn]) {
                 if (i + 1 == columnOfPiece && j + 1 == rowOfPiece) { //
-
+                    if (position == 'l' || position == 'L') {
+                        gameBoard[i][j] = ' ';
+                        if (playerTurn == R) {
+                            gameBoard[i+1][j-1] = playersChar[playerTurn];
+                            // this is the left direction for 'R' (Player 1)
+                        } else {
+                            gameBoard[i-1][j-1] = playersChar[playerTurn];
+                            // this is the left direction for 'B' (Player 2)
+                        }
+                    } else if (position == 'r' || position == 'R') {
+                        gameBoard[i][j] = ' ';
+                        if (playerTurn == R) {
+                            gameBoard[i+1][j+1] = playersChar[playerTurn];
+                            // this is the right direction for 'R' (Player 1)
+                        } else {
+                            gameBoard[i-1][j+1] = playersChar[playerTurn];
+                            // this is the right direction for 'B' (Player 2)
+                        }
+                    }
                 }
             }
         }
     }
 }
-
-
-//void direction(int playerTurn) {
-//    if (position == 'l' || position == 'L') {
-//        pickChecker(playerTurn);
-//    } else if (position == 'r' || position == 'R') {
-//
-//    }
-//}
