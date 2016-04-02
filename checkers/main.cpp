@@ -6,13 +6,19 @@ void printBoard(int size);
 void startPositions(int size);
 void player(int index);
 void pickChecker(int playerTurn);
+void flushBoard();
+bool scoring();
+void kinging(); // yet to be used
 
 char gameBoard[8][8];
 
-char playersChar[] = {'R', 'B'};
+char playersChar[] = {'R', 'B', 'K'};
 int columnOfPiece;
 int rowOfPiece;
 char position;
+int scoreP1 = 0;
+int scoreP2 = 0;
+bool running = true;
 
 enum PLAYERS {
     R = 0,
@@ -20,39 +26,53 @@ enum PLAYERS {
 };
 
 int main() {
-
     cout << "Welcome to my checkers game" << endl;
     cout << "Player 1 is 'R'" << endl;
     cout << "Player 2 is 'B'" << endl;
-    cout << "You play by selecting the counter that you want to move" << endl;
-    cout << "Checkers piece 1 to 12" << endl;
+    cout << "You play by selecting the column and row of the checkers piece that you want to move" << endl;
+    cout << "Checkers board is 8x8" << endl;
     cout << "Then selecting a direction" << endl;
-    cout << "'L' for Left" << endl;
-    cout << "'R' for Right" << endl;
-    while (true) {
+    cout << "'L' or 'l' for Left" << endl;
+    cout << "'R' or 'r' for Right" << endl;
+    flushBoard(); // flush the board
+    while (running) {
         startPositions(8); // places the checkers in the default position
-        printBoard(8);
-        for (int i = R; i <= B; ++i) {
-            player(i);
-            pickChecker(i);
-            printBoard(8);
+        printBoard(8); // print the board to the console
+        while (running) {
+            for (int i = R; i <= B; ++i) {
+                scoring();
+                player(i);
+                pickChecker(i);
+                printBoard(8);
+            }
         }
     }
 }
 
 void printBoard(int size) {
+    int columnNumber = 1;
+    int rowNumber = 1;
     for (int i = 0; i < size; ++i) {
+        for (int l = 0; l < size; ++l) {
+            if (i == 0) {
+                cout << "  " << columnNumber++ << "  "; // this is to print the numbers at the top
+            }
+        }
+        if (i == 0) // this is to end line when the numbers at the top finish
+            cout << endl;
         for (int k = 0; k < size; ++k) {
-            cout << "---- ";
+            cout << "---- "; //
         }
         cout << endl;
         for (int j = 0; j < size; ++j) {
-            cout << "| "<< gameBoard[i][j] << " |" ;
+            cout << "| "<< gameBoard[i][j] << " |" ; // print the numbers between the
+            if (j == 7)
+                cout << " " << rowNumber++;
         }
         cout << endl;
         if (i == size - 1) {
             for (int j = 0; j < size; ++j) {
-                cout << "---- ";
+                cout << "---- "; // this is to print the lines at the bottom of the board
             }
         }
     }
@@ -80,6 +100,9 @@ void startPositions(int size) {
 }
 
 void player(int index) {
+    cout << "\nPieces left";
+    cout << "\nPlayer 1: " << scoreP1 << endl;
+    cout << "Player 2: " << scoreP2 << endl;
     cout << "\nPlayer " << index + 1 << endl;
     cout << "Which checker do you want to move" << endl;
     cout << "What is the column number?" << endl;
@@ -92,10 +115,10 @@ void player(int index) {
 }
 
 void pickChecker(int playerTurn) {
-    for (int i = 0; i < 8; ++i) { // column
-        for (int j = 0; j < 8; ++j) { // row
+    for (int i = 0; i < 8; ++i) { // row
+        for (int j = 0; j < 8; ++j) { // column
             if (gameBoard[i][j] == playersChar[playerTurn]) {
-                if (i + 1 == columnOfPiece && j + 1 == rowOfPiece) { //
+                if (i + 1 == rowOfPiece && j + 1 == columnOfPiece) { //
                     if (position == 'l' || position == 'L') {
                         gameBoard[i][j] = ' ';
                         if (playerTurn == R) {
@@ -120,3 +143,45 @@ void pickChecker(int playerTurn) {
         }
     }
 }
+
+void flushBoard() {
+    for (int j = 0; j < 8; ++j) {
+        for (int i = 0; i < 8; ++i) {
+            gameBoard[j][i] = ' ';
+        }
+    }
+    // this 'for' loop is to remove the little squares from the game board, when using the Xcode compiler
+}
+
+
+bool scoring() {
+    scoreP1 = 0;
+    scoreP2 = 0;
+    for (int i = 0; i < 8; ++i) {
+        for (int j = 0; j < 8; ++j) {
+            if (gameBoard[i][j] == playersChar[0]) {
+                scoreP1++;
+            } else if (gameBoard[i][j] == playersChar[1]) {
+                scoreP2++;
+            }
+        }
+    }
+    for (int k = 0; k < 8; ++k) {
+        for (int i = 0; i < 8; ++i) {
+            if (scoreP1 == 0 || scoreP2 == 0) {
+                running = !running;
+            }
+        }
+    }
+    return running;
+}
+
+//void kinging(int index) {
+//    for (int i = 0; i < 8; ++i) {
+//        if (playersChar[0] == gameBoard[8][i]) {
+//
+//        } else if (playersChar[1] == gameBoard[1][i]) {
+//
+//        }
+//    }
+//}
