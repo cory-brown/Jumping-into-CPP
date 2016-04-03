@@ -19,6 +19,7 @@ char position;
 int scoreP1 = 0;
 int scoreP2 = 0;
 bool running = true;
+char kingDirection;
 
 enum PLAYERS {
     R = 0,
@@ -43,11 +44,17 @@ int main() {
                 scoring();
                 player(i);
                 pickChecker(i);
+                kinging();
                 printBoard(8);
             }
         }
     }
 }
+
+
+// TODO: add a jumping function for when you take one of your opponent's
+// checkers and also check for an extra jump and you can't stop jumping until no more are available
+
 
 void printBoard(int size) {
     int columnNumber = 1;
@@ -79,7 +86,7 @@ void printBoard(int size) {
 }
 
 void startPositions(int size) {
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 3; i++) { // R
         for (int j = 0; j < size; ++j) {
             if (j % 2 == 0 && i % 2 == 0) { // odd tile space
                 gameBoard[i][j] = playersChar[0];
@@ -88,7 +95,7 @@ void startPositions(int size) {
             }
         }
     }
-    for (int i = size; i > 4; i--) {
+    for (int i = size; i > 4; i--) { // B
         for (int j = size - 1; j > - 1; j--) {
             if (j % 2 == 0 && i % 2 == 0) {// odd tile space
                 gameBoard[i][j] = playersChar[1];
@@ -117,16 +124,27 @@ void player(int index) {
 void pickChecker(int playerTurn) {
     for (int i = 0; i < 8; ++i) { // row
         for (int j = 0; j < 8; ++j) { // column
-            if (gameBoard[i][j] == playersChar[playerTurn]) {
+            if (gameBoard[i][j] == playersChar[playerTurn] || gameBoard[i][j] == playersChar[2]) {
                 if (i + 1 == rowOfPiece && j + 1 == columnOfPiece) { //
                     if (position == 'l' || position == 'L') {
                         gameBoard[i][j] = ' ';
                         if (playerTurn == R) {
                             gameBoard[i+1][j-1] = playersChar[playerTurn];
                             // this is the left direction for 'R' (Player 1)
-                        } else {
+                        } else if (playerTurn == B) {
                             gameBoard[i-1][j-1] = playersChar[playerTurn];
                             // this is the left direction for 'B' (Player 2)
+                        } else {
+                           cout << "You have selected a King" << endl;
+                           cout << "Which direction do you which to go?" << endl;
+                           cout << "Forward or Backwards?" << endl;
+                           cout << "F/B or f/b" << endl;
+                           cin >> kingDirection;
+                           if (kingDirection == 'F' || kingDirection == 'f') {
+                               // TODO: add a forward and backwards movement if the player chooses a king
+                           } else if (kingDirection == 'B' || kingDirection == 'b') {
+
+                           }
                         }
                     } else if (position == 'r' || position == 'R') {
                         gameBoard[i][j] = ' ';
@@ -153,7 +171,6 @@ void flushBoard() {
     // this 'for' loop is to remove the little squares from the game board, when using the Xcode compiler
 }
 
-
 bool scoring() {
     scoreP1 = 0;
     scoreP2 = 0;
@@ -166,6 +183,13 @@ bool scoring() {
             }
         }
     }
+    for (int j = 0; j > 8; ++j) {
+        if (gameBoard[7][j] == playersChar[2]) {
+            scoreP1++;
+        } else if (gameBoard[0][j] == playersChar[2]){
+            scoreP2++;
+        }
+    }
     for (int k = 0; k < 8; ++k) {
         for (int i = 0; i < 8; ++i) {
             if (scoreP1 == 0 || scoreP2 == 0) {
@@ -176,12 +200,12 @@ bool scoring() {
     return running;
 }
 
-//void kinging(int index) {
-//    for (int i = 0; i < 8; ++i) {
-//        if (playersChar[0] == gameBoard[8][i]) {
-//
-//        } else if (playersChar[1] == gameBoard[1][i]) {
-//
-//        }
-//    }
-//}
+void kinging() {
+    for (int i = 0; i < 8; ++i) {
+        if (playersChar[0] == gameBoard[3][i]) {
+            gameBoard[2][i] = playersChar[2];
+        } else if (playersChar[1] == gameBoard[0][i]) {
+            gameBoard[7][i] = playersChar[2];
+        }
+    }
+}
