@@ -1,4 +1,7 @@
 #include <iostream>
+#include <ctime>
+#include <cstdlib>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -18,7 +21,7 @@ int randRange(int high, int low) {
 int rand();
 
 int main() {
-    srand48(time(NULL));
+    srand(time(NULL));
     i = 1;
     while (i == 1) {
         cout << "Type flip to begin\n " << endl;
@@ -31,4 +34,3 @@ int main() {
         }
     }
 }
-
