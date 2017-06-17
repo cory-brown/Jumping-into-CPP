@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/cbrow/OneDrive/Jumping into C++/Chapter 24 The Class/24.01/TicTacToe.cpp
+TicTacToe.h
+C:/Users/cbrow/OneDrive/Jumping into C++/Chapter 24 The Class/24.01/TicTacToe.h
+
+C:/Users/cbrow/OneDrive/Jumping into C++/Chapter 24 The Class/24.01/TicTacToe.h
+iostream
+-
+string
+-
+
+C:/Users/cbrow/OneDrive/Jumping into C++/Chapter 24 The Class/24.01/main.cpp
+TicTacToe.h
+C:/Users/cbrow/OneDrive/Jumping into C++/Chapter 24 The Class/24.01/TicTacToe.h
+

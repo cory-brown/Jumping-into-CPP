@@ -1,0 +1,7 @@
+C:\Users\cbrow\AppData\Local\Temp\cckB51Sn.o:main.cpp:(.text+0x20): undefined reference to `vectorOfInt::vectorOfInt(int)'
+C:\Users\cbrow\AppData\Local\Temp\cckB51Sn.o:main.cpp:(.text+0x33): undefined reference to `vectorOfInt::sizeOfArray()'
+C:\Users\cbrow\AppData\Local\Temp\cckB51Sn.o:main.cpp:(.text+0x4f): undefined reference to `vectorOfInt::pushBack(int)'
+C:\Users\cbrow\AppData\Local\Temp\cckB51Sn.o:main.cpp:(.text+0x5b): undefined reference to `vectorOfInt::sizeOfArray()'
+C:\Users\cbrow\AppData\Local\Temp\cckB51Sn.o:main.cpp:(.text+0x8a): undefined reference to `vectorOfInt::~vectorOfInt()'
+C:\Users\cbrow\AppData\Local\Temp\cckB51Sn.o:main.cpp:(.text+0xa0): undefined reference to `vectorOfInt::~vectorOfInt()'
+collect2.exe: error: ld returned 1 exit status

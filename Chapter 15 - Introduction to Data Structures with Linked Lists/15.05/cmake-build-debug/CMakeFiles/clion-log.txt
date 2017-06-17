@@ -1,0 +1,4 @@
+"C:\Program Files (x86)\JetBrains\CLion 2016.3.2\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\cbrow\OneDrive\Jumping into C++\Chapter 15 - Introduction to Data Structures with Linked Lists\15.05"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/cbrow/OneDrive/Jumping into C++/Chapter 15 - Introduction to Data Structures with Linked Lists/15.05/cmake-build-debug

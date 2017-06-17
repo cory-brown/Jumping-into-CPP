@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 21 Breaking Programs Up Into Smaller Pieces/21.01/Calculator.cpp
+Calculator.h
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 21 Breaking Programs Up Into Smaller Pieces/21.01/Calculator.h
+
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 21 Breaking Programs Up Into Smaller Pieces/21.01/Calculator.h
+
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 21 Breaking Programs Up Into Smaller Pieces/21.01/main.cpp
+iostream
+-
+Calculator.h
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 21 Breaking Programs Up Into Smaller Pieces/21.01/Calculator.h
+

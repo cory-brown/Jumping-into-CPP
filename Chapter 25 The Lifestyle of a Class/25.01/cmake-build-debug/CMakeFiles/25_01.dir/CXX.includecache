@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/cbrow/OneDrive/Jumping into C++/Chapter 25 The Lifestyle of a Class/25.01/main.cpp
+vectorOfInt.h
+C:/Users/cbrow/OneDrive/Jumping into C++/Chapter 25 The Lifestyle of a Class/25.01/vectorOfInt.h
+
+C:/Users/cbrow/OneDrive/Jumping into C++/Chapter 25 The Lifestyle of a Class/25.01/vectorOfInt.cpp
+vectorOfInt.h
+C:/Users/cbrow/OneDrive/Jumping into C++/Chapter 25 The Lifestyle of a Class/25.01/vectorOfInt.h
+
+C:/Users/cbrow/OneDrive/Jumping into C++/Chapter 25 The Lifestyle of a Class/25.01/vectorOfInt.h
+iostream
+-
+

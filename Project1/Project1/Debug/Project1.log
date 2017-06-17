@@ -1,6 +1,0 @@
-﻿  MyForm.cpp
-MyForm.cpp(7): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
-  .NETFramework,Version=v4.5.2.AssemblyAttributes.cpp
-  MyForm.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
-  Project1.vcxproj -> c:\users\cbrow\documents\visual studio 2015\Projects\Project1\Debug\Project1.exe
-  Project1.vcxproj -> c:\users\cbrow\documents\visual studio 2015\Projects\Project1\Debug\Project1.pdb (Partial PDB)

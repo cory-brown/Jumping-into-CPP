@@ -1,0 +1,8 @@
+C:\Users\cbrow\AppData\Local\Temp\cc832U2o.o:main.cpp:(.text+0xa5): undefined reference to `TicTacToe_board::initBoard()'
+C:\Users\cbrow\AppData\Local\Temp\cc832U2o.o:main.cpp:(.text+0x13b): undefined reference to `TicTacToe_board::printBoard()'
+C:\Users\cbrow\AppData\Local\Temp\cc832U2o.o:main.cpp:(.text+0x14a): undefined reference to `TicTacToe_board::player(int)'
+C:\Users\cbrow\AppData\Local\Temp\cc832U2o.o:main.cpp:(.text+0x159): undefined reference to `TicTacToe_board::winner(int)'
+C:\Users\cbrow\AppData\Local\Temp\cc832U2o.o:main.cpp:(.text+0x173): undefined reference to `TicTacToe_board::printBoard()'
+C:\Users\cbrow\AppData\Local\Temp\cc832U2o.o:main.cpp:(.text+0x1c4): undefined reference to `TicTacToe_board::playAgain(int&)'
+C:\Users\cbrow\AppData\Local\Temp\cc832U2o.o:main.cpp:(.text+0x1e1): undefined reference to `TicTacToe_board::deleteBoard()'
+collect2.exe: error: ld returned 1 exit status

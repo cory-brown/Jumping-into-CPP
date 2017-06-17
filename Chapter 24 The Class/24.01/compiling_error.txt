@@ -1,0 +1,12 @@
+C:\Users\cbrow\OneDrive\Jumping into C++\Chapter 24 The Class\24.01\TicTacToe.h:17:17: error: invalid use of non-static data member 'TicTacToe_board::_board_size'
+     char _board[_board_size][_board_size];
+                 ^
+C:\Users\cbrow\OneDrive\Jumping into C++\Chapter 24 The Class\24.01\TicTacToe.h:16:29: note: declared here
+     const int _board_size = 3;
+                             ^
+C:\Users\cbrow\OneDrive\Jumping into C++\Chapter 24 The Class\24.01\TicTacToe.h:17:30: error: invalid use of non-static data member 'TicTacToe_board::_board_size'
+     char _board[_board_size][_board_size];
+                              ^
+C:\Users\cbrow\OneDrive\Jumping into C++\Chapter 24 The Class\24.01\TicTacToe.h:16:29: note: declared here
+     const int _board_size = 3;
+                             ^

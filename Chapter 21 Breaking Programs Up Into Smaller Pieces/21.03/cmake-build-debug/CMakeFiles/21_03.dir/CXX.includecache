@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 21 Breaking Programs Up Into Smaller Pieces/21.03/BinaryTree.cpp
+BinaryTree.h
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 21 Breaking Programs Up Into Smaller Pieces/21.03/BinaryTree.h
+
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 21 Breaking Programs Up Into Smaller Pieces/21.03/BinaryTree.h
+iostream
+-
+
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 21 Breaking Programs Up Into Smaller Pieces/21.03/main.cpp
+BinaryTree.h
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 21 Breaking Programs Up Into Smaller Pieces/21.03/BinaryTree.h
+

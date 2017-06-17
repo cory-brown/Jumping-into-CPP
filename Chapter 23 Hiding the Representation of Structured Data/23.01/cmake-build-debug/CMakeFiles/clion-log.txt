@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2017.1.1\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\cbrow\OneDrive\Jumping into C++\Chapter 23 Hiding the Representation of Structured Data\23.01"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/cbrow/OneDrive/Jumping into C++/Chapter 23 Hiding the Representation of Structured Data/23.01/cmake-build-debug
