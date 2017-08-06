@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 29 Templates/29.02/main.cpp
+newVector.hxx
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 29 Templates/29.02/newVector.hxx
+newVector.cpp
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 29 Templates/29.02/newVector.cpp
+
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 29 Templates/29.02/newVector.cpp
+newVector.hxx
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 29 Templates/29.02/newVector.hxx
+
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 29 Templates/29.02/newVector.hxx
+iostream
+-
+

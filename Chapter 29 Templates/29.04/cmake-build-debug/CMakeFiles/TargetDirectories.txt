@@ -1,0 +1,3 @@
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 29 Templates/29.04/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 29 Templates/29.04/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 29 Templates/29.04/cmake-build-debug/CMakeFiles/29_04.dir

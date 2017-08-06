@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 26 Inheritance and Polymorphism/26.01/compare.cpp
+compare.h
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 26 Inheritance and Polymorphism/26.01/compare.h
+
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 26 Inheritance and Polymorphism/26.01/compare.h
+iostream
+-
+vector
+-
+
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 26 Inheritance and Polymorphism/26.01/main.cpp
+compare.h
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 26 Inheritance and Polymorphism/26.01/compare.h
+

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 29 Templates/29.04/main.cpp
+iostream
+-
+vector
+-
+typeinfo
+-
+

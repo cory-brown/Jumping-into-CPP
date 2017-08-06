@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/29_02.dir/main.cpp.o CMakeFiles/29_02.dir/newVector.cpp.o  -o 29_02 

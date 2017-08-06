@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 28 File IO/28.04/XMLParser.cpp
+XMLParser.h
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 28 File IO/28.04/XMLParser.h
+
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 28 File IO/28.04/XMLParser.h
+iostream
+-
+fstream
+-
+vector
+-
+cctype
+-
+
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 28 File IO/28.04/main.cpp
+XMLParser.h
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 28 File IO/28.04/XMLParser.h
+

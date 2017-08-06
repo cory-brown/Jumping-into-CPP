@@ -1,0 +1,19 @@
+<address-book addressBook="1" root="true">
+
+  <entry>
+
+    <name>Cory Brown</name>
+
+    <email>cbrown8100@gmail.com</email>
+
+  </entry>
+
+  <entry>
+
+    <name>Joe Doe</name>
+
+    <email>john@doe.com</email>
+
+  </entry>
+
+</address-book>

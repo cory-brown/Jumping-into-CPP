@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/corybrown/Downloads/Jumping into C++ (2)/Chapter 26 Inheritance and Polymorphism/26.01_self/main.cpp
+score.h
+/Users/corybrown/Downloads/Jumping into C++ (2)/Chapter 26 Inheritance and Polymorphism/26.01_self/score.h
+algorithm
+-
+
+/Users/corybrown/Downloads/Jumping into C++ (2)/Chapter 26 Inheritance and Polymorphism/26.01_self/score.cpp
+score.h
+/Users/corybrown/Downloads/Jumping into C++ (2)/Chapter 26 Inheritance and Polymorphism/26.01_self/score.h
+
+/Users/corybrown/Downloads/Jumping into C++ (2)/Chapter 26 Inheritance and Polymorphism/26.01_self/score.h
+iostream
+-
+vector
+-
+

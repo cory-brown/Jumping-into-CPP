@@ -1,0 +1,10 @@
+/Users/corybrown/OneDrive/Jumping into C++/Chapter 26 Inheritance and Polymorphism/26.01/main.cpp:50:31: error: no viable overloaded operator[] for type 'vector<Comparable *>'
+    cout << Score1.sort(&score[i]) << endl;
+                         ~~~~~^~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/vector:653:47: note: candidate function not viable: no known conversion from 'Comparable *const' to 'size_type' (aka 'unsigned long') for 1st argument
+    _LIBCPP_INLINE_VISIBILITY reference       operator[](size_type __n);
+                                              ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/vector:654:47: note: candidate function not viable: no known conversion from 'Comparable *const' to 'size_type' (aka 'unsigned long') for 1st argument
+    _LIBCPP_INLINE_VISIBILITY const_reference operator[](size_type __n) const;
+                                              ^
+1 error generated.

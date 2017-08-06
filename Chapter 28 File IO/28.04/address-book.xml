@@ -1,0 +1,14 @@
+<address-book addressBook="1" root="true">
+
+  <ul>
+    <li>Bob</li>
+    <li>Jon</li>
+    <li>Howard</li>
+  </ul>
+
+  <nl>
+    <li>Bob</li>
+    <li>Nick</li>
+  </nl>
+
+</address-book>

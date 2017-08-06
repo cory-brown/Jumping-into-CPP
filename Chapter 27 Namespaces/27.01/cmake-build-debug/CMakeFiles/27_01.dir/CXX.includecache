@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/corybrown/Downloads/Jumping into C++ (2)/Chapter 27 Namespaces/27.01/main.cpp
+vectorOfInts.h
+/Users/corybrown/Downloads/Jumping into C++ (2)/Chapter 27 Namespaces/27.01/vectorOfInts.h
+
+/Users/corybrown/Downloads/Jumping into C++ (2)/Chapter 27 Namespaces/27.01/vectorOfInts.cpp
+vectorOfInts.h
+/Users/corybrown/Downloads/Jumping into C++ (2)/Chapter 27 Namespaces/27.01/vectorOfInts.h
+
+/Users/corybrown/Downloads/Jumping into C++ (2)/Chapter 27 Namespaces/27.01/vectorOfInts.h
+iostream
+-
+
